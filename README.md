@@ -143,23 +143,45 @@ plt.show()
 ![0](https://github.com/kaviyabalaji/Ex-08-Data-Visualization-/blob/main/1.png)
 ## Data Visualization Using Seborn:
 ### 1.Line Plot
-![0](
+![0](https://github.com/kaviyabalaji/Ex-08-Data-Visualization-/blob/main/2.png)
+![0](https://github.com/kaviyabalaji/Ex-08-Data-Visualization-/blob/main/3.png)
+![0](https://github.com/kaviyabalaji/Ex-08-Data-Visualization-/blob/main/4.png)
 ### 2.Scatterplot
-![0](
+![0](https://github.com/kaviyabalaji/Ex-08-Data-Visualization-/blob/main/5.png)
+![0](https://github.com/kaviyabalaji/Ex-08-Data-Visualization-/blob/main/6.png)
+![0](https://github.com/kaviyabalaji/Ex-08-Data-Visualization-/blob/main/7.png)
 ### 3.Boxplot
-![0](
+![0](https://github.com/kaviyabalaji/Ex-08-Data-Visualization-/blob/main/8.png)
+![0](https://github.com/kaviyabalaji/Ex-08-Data-Visualization-/blob/main/9.png)
 ### 4.Violin Plot
-![0](
+![0](https://github.com/kaviyabalaji/Ex-08-Data-Visualization-/blob/main/10.png)
 ### 5.Barplot
+![0](https://github.com/kaviyabalaji/Ex-08-Data-Visualization-/blob/main/11.png)
+![0](https://github.com/kaviyabalaji/Ex-08-Data-Visualization-/blob/main/12.png)
 ### 6.Pointplot
+![0](https://github.com/kaviyabalaji/Ex-08-Data-Visualization-/blob/main/13.png)
 ### 7.Count plot
+![0](https://github.com/kaviyabalaji/Ex-08-Data-Visualization-/blob/main/14.png)
+![0](https://github.com/kaviyabalaji/Ex-08-Data-Visualization-/blob/main/15.png)
 ### 8.Histogram
+![0](https://github.com/kaviyabalaji/Ex-08-Data-Visualization-/blob/main/16.png)
 ### 9.KDE Plot
+![0](https://github.com/kaviyabalaji/Ex-08-Data-Visualization-/blob/main/17.png)
 ## Data Visualization Using Matplotlib:
 ### 1.Plot
+![0](https://github.com/kaviyabalaji/Ex-08-Data-Visualization-/blob/main/18.png)
 ### 2.Heatmap
+![0](https://github.com/kaviyabalaji/Ex-08-Data-Visualization-/blob/main/19.png)
 ### 3.Piechart
+![0](https://github.com/kaviyabalaji/Ex-08-Data-Visualization-/blob/main/20.png)
+![0](https://github.com/kaviyabalaji/Ex-08-Data-Visualization-/blob/main/21.png)
 ### 4.Histogram
+![0](https://github.com/kaviyabalaji/Ex-08-Data-Visualization-/blob/main/22.png)
 ### 5.Bargraph
+![0](https://github.com/kaviyabalaji/Ex-08-Data-Visualization-/blob/main/23.png)
 ### 6.Scatterplot
+![0](https://github.com/kaviyabalaji/Ex-08-Data-Visualization-/blob/main/24.png)
 ### 7.Boxplot
+![0](https://github.com/kaviyabalaji/Ex-08-Data-Visualization-/blob/main/25.png)
+# RESULT:
+Hence,Data Visualization is applied on the complex dataset using libraries like Seaborn and Matplotlib successfully and the data is saved to file.
