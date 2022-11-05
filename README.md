@@ -19,57 +19,142 @@ Apply data visualization techniques to identify the patterns of the data.
 
 # CODE
 ```
-Developed By : B.Kaviya
-Register Number : 212221040079
-
-# Importing packages
 import pandas as pd
-import numpy as np
+df=pd.read_csv("Superstore.csv",encoding='unicode_escape')
 
-# Importing visualization libraries
+df.head()
+
+#Data Visualization using Seaborn
+
 import seaborn as sns
-import matplotlib.pyplot as plt
+from matplotlib import pyplot as plt
 
-df_super = pd.read_csv('Superstore.csv')
+#1.Line Plot
 
-df_super.head(5)
+plt.figure(figsize=(9,6))
+sns.lineplot(x="Segment",y="Region",data=df,marker='o')
+plt.xticks(rotation = 90)
 
-df_super=df_super.groupby(by=["Category"]).sum()
-labels=[]
-for i in df_super.index:
-    labels.append(i)  
-plt.figure(figsize=(8,8))
-colors = sns.color_palette('pastel')
-plt.pie(df_super["Profit"],colors = colors,labels=labels, autopct = '%0.0f%%')
+sns.lineplot(x='Ship Mode',y='Category', hue ="Segment",data=df)
+
+sns.lineplot(x="Category",y="Sales",data=df,marker='o')
+
+#2.Scatterplot
+
+sns.scatterplot(x='Category',y='Sub-Category',data=df)
+
+sns.scatterplot(x='Category', y='Sub-Category', hue ="Segment",data=df)
+
+plt.figure(figsize=(10,7))
+sns.scatterplot(x="Region",y="Sales",data=df)
+plt.xticks(rotation = 90)
+
+#3.Boxplot
+
+sns.boxplot(x="Sub-Category",y="Discount",data=df)
+
+sns.boxplot( x="Profit", y="Category",data=df)
+
+#4.Violin Plot
+
+sns.violinplot(x="Profit",data=df)
+
+#5.Barplot
+
+sns.barplot(x="Sub-Category",y="Sales",data=df)
+plt.xticks(rotation = 90)
+
+sns.barplot(x="Category",y="Sales",data=df)
+plt.xticks(rotation = 90)
+
+#6.Pointplot
+
+sns.pointplot(x=df["Quantity"],y=df["Discount"])
+
+#7.Count plot
+
+sns.countplot(x="Category",data=df)
+
+sns.countplot(x="Sub-Category",data=df)
+
+#8.Histogram
+
+sns.histplot(data=df,x ='Ship Mode',hue='Sub-Category')
+
+#9.KDE Plot
+
+sns.kdeplot(x="Profit", data = df,hue='Category')
+
+#Data Visualization Using MatPlotlib
+
+#1.Plot
+
+plt.plot(df['Category'], df['Sales'])
 plt.show()
 
+#2.Heatmap
 
-sns.set_style('whitegrid')
-sns.countplot(x='Segment',data=df_super, palette='rainbow')
+df.corr()
+plt.subplots(figsize=(12,7))
+sns.heatmap(df.corr(),annot=True)
 
-sns.set_style('whitegrid')
-sns.countplot(x='Category',data=df_super, palette='rainbow')
+#3.Piechart
 
-sns.set_style('whitegrid')
-sns.countplot(x='Sub-Category',data=df_super, palette='rainbow')
+df1=df.groupby(by=["Ship Mode"]).sum()
+labels=[]
+for i in df1.index:
+    labels.append(i)
+colors=sns.color_palette("bright")
+plt.pie(df1["Sales"],labels=labels,autopct="%0.0f%%")
+plt.show()
 
-sns.set_style('whitegrid')
-sns.countplot(x='Region',data=df_super, palette='rainbow')
+df3=df.groupby(by=["Category"]).sum()
+labels=[]
+for i in df3.index:
+    labels.append(i) 
+plt.figure(figsize=(8,8))
+colors = sns.color_palette('pastel')
+plt.pie(df3["Profit"],colors = colors,labels=labels, autopct = '%0.0f%%')
+plt.show()
 
-sns.set_style('whitegrid')
-sns.countplot(x='Ship Mode',data=df_super, palette='rainbow')
+#4.Histogram
 
-category_hist = sns.FacetGrid(df_super, col='Ship Mode', palette='rainbow')
-category_hist.map(plt.hist, 'Category')
-category_hist.set_ylabels('Number')
+plt.hist(df["Sub-Category"],facecolor="peru",edgecolor="blue",bins=10)
+plt.show()
 
-subcategory_hist = sns.FacetGrid(df_super, col='Segment', height=10.5, aspect=4.6)
-subcategory_hist.map(plt.hist, 'Sub-Category')
-subcategory_hist.set_ylabels('Number')
+#5.Bargraph
 
-grid = sns.FacetGrid(df_super, row='Category', col='Sub-Category', height=2.2, aspect=1.6)
-grid.map(sns.barplot, 'Profit', 'Segment', alpha=.5, ci=None)
-grid.add_legend()
+plt.bar(df.index,df['Category'])
+plt.show()
+
+#6.Scatterplot
+
+plt.scatter(df["Region"],df["Profit"], c ="blue")
+plt.show() 
+
+#7.Boxplot
+
+plt.boxplot(x="Sales",data=df)
+plt.show()
 ```
 
 # OUPUT
+## Reading the given dataset
+## Data Visualization Using Seborn:
+### 1.Line Plot
+### 2.Scatterplot
+### 3.Boxplot
+### 4.Violin Plot
+### 5.Barplot
+### 6.Pointplot
+### 7.Count plot
+### 8.Histogram
+### 9.KDE Plot
+## Data Visualization Using Matplotlib:
+### 1.Plot
+### 2.Heatmap
+### 3.Piechart
+### 4.Histogram
+### 5.Bargraph
+### 6.Scatterplot
+### 7.Boxplot
