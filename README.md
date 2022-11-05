@@ -143,9 +143,13 @@ plt.show()
 ![0](https://github.com/kaviyabalaji/Ex-08-Data-Visualization-/blob/main/1.png)
 ## Data Visualization Using Seborn:
 ### 1.Line Plot
+![0](
 ### 2.Scatterplot
+![0](
 ### 3.Boxplot
+![0](
 ### 4.Violin Plot
+![0](
 ### 5.Barplot
 ### 6.Pointplot
 ### 7.Count plot
