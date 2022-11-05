@@ -140,6 +140,7 @@ plt.show()
 
 # OUPUT
 ## Reading the given dataset
+![0](https://github.com/kaviyabalaji/Ex-08-Data-Visualization-/blob/main/1.png)
 ## Data Visualization Using Seborn:
 ### 1.Line Plot
 ### 2.Scatterplot
